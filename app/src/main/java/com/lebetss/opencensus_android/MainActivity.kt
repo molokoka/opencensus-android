@@ -1,7 +1,7 @@
 package com.lebetss.opencensus_android
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         thread {
-            ExampleStatsExporter.main()
+            ExampleStatsExporter.registerAndRunExporter()
         }
     }
 }

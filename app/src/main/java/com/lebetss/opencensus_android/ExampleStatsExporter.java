@@ -37,10 +37,9 @@ public final class ExampleStatsExporter extends MetricExporter {
     private static final StatsRecorder statsRecorder = Stats.getStatsRecorder();
     private final IntervalMetricReader intervalMetricReader;
 
-    /** Entry point from the command line to test the exporter. */
-    public static void main(String... args) {
-        ExampleStatsExporter exporter = ExampleStatsExporter.createAndRegister();
+    public static void registerAndRunExporter() {
         registerAllViews();
+        ExampleStatsExporter exporter = ExampleStatsExporter.createAndRegister();
         // Collect some data to test the exporter
         Random rand = new Random();
         try {

@@ -24,12 +24,11 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
-    implementation 'io.opencensus:opencensus-api:0.24.0'
-    implementation 'io.opencensus:opencensus-exporter-metrics-util:0.24.0'
-    runtimeOnly 'io.opencensus:opencensus-impl:0.24.0'
+    implementation 'io.opencensus:opencensus-exporter-metrics-util:0.25.0'
+    runtimeOnly 'io.opencensus:opencensus-impl-lite:0.25.0'
 
     testImplementation 'junit:junit:4.12'
 }
